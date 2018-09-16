@@ -1,0 +1,4 @@
+testRedefinirSenha,email,mensagem
+                  ,emailnaocadastrado@sambatech.com.br,Ops! Email não encontrado no nosso sistema. Por favor digite novamente.
+                  ,,Por favor informe seu email.
+                  ,emailinvalido.email.com.br,Por favor digite um email válido.
