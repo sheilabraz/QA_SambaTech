@@ -6,5 +6,7 @@ O objetivo deste projeto é a realização de testes de sistema manuais e automa
 Ferramentas desenvolvimento:
 
 IntelliJ IDEA 2017.3.4 (Community Edition)
+
 Selenium Webdriver 3.6.0
+
 JUnit 4.12
