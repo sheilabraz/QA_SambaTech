@@ -1,0 +1,33 @@
+Data: 15/09/2018
+
+Autor: Sheila Rosa Braz
+
+
+Funcionalidade: Login
+A fim de permitir o acesso às funcionalidades do sistema
+Os usuários devem ser capazes de realizar login na aplicação
+
+Cenário: Login com sucesso
+Dado que eu sou um usuário cadastrado no sistema
+Quando eu informar credenciais válidas
+Então o sistema deve permitir logar na aplicação
+
+Cenário: Senha não informada
+Dado que acesse a página de login
+Quando eu informar um email válido
+Mas não informar a senha 
+Então o sistema deve exibir a mensagem "Email ou senha incorretos"
+E não deve permitir logar na aplicação
+
+Cenário:Senha inválida
+Dado que acesse a página de login
+Quando eu informar um email válido
+Mas informar uma senha incorreta
+Então o sistema deve exibir a mensagem "Email ou senha incorretos"
+E não deve permitir logar na aplicação
+
+Cenário: Credenciais não informadas
+Dado que acesse a página de login
+Quando eu tentar logar sem informar as credenciais
+Então o sistema deve exibir a mensagem "Email ou senha incorretos"
+E não deve permitir logar na aplicação

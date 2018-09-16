@@ -1,0 +1,36 @@
+Data: 15/09/2018
+
+Autor: Sheila Rosa Braz
+
+Funcionalidade: Redefinir Senha
+O usuário cadastrados no sistema deve ser capaz de recuperar sua senha em caso de esquecimento da mesma.
+
+Cenário: Acesso à página de redefinição de senha
+Dado que sou um usuário cadastrado no sistema
+Mas não me lembre da senha cadastrada
+Quando eu acessar o link 'Esqueci minha senha' da página de login
+Então devo ser redirecionado para a página de redefinição de senha
+
+Cenário: Email não encontrado
+Dado que eu esteja na tela de redefinição de senha
+Quando eu informar um email não cadastrado
+Então o sistema deve exibir a mensagem "Ops! Email não encontrado no nosso sistema. Por favor digite novamente."
+
+Cenário: Email não informado
+Dado que eu esteja na tela de redefinição de senha
+Quando eu tentar redefinir a senha sem informar um email
+Então o sistema deve exibir a mensagem "Por favor, informe seu email."
+
+Cenário: Email inválido
+Dado que eu esteja na tela de redefinição de senha
+Quando eu informar um email inválido
+E tentar redefinir minha senha
+Então o sistema deve apresentar a mensagem "Por favor digite um email válido."
+
+Cenário:Email válido
+Dado que eu esteja na tela de redefinição de senha
+Quando eu informar um email válido
+E tentar redefinir minha senha
+Então o sistema deve apresentar a mensagem "Falta pouco! Enviamos um email com instruções para redefinição da sua senha."
+
+OBS: no cenário acima não foi feita a validação do recebimento do email de redefinição de senha, apenas a exibição das mensagens.
